@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://119.29.143.165:3306/chengzhi</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">daily.123</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+
+
+        <mapping class="chengzhi.po.ArticlesEntity"/>
+        <mapping class="chengzhi.po.MigrationsEntity"/>
+        <mapping class="chengzhi.po.NodesEntity"/>
+        <mapping class="chengzhi.po.PapersEntity"/>
+        <mapping class="chengzhi.po.PasswordResetsEntity"/>
+        <mapping class="chengzhi.po.PermissionRoleEntity"/>
+        <mapping class="chengzhi.po.PermissionsEntity"/>
+        <mapping class="chengzhi.po.PhotosEntity"/>
+        <mapping class="chengzhi.po.PopImageEntity"/>
+        <mapping class="chengzhi.po.PostersEntity"/>
+        <mapping class="chengzhi.po.RoleUserEntity"/>
+        <mapping class="chengzhi.po.RolesEntity"/>
+        <mapping class="chengzhi.po.SlidesEntity"/>
+        <mapping class="chengzhi.po.UsersEntity"/>
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
